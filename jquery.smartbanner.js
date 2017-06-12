@@ -216,8 +216,9 @@
           .css('-moz-transform', 'scale(' + this.scale + ')')
           .css('width', $(window).width() / this.scale);
       }
-      $('#smartbanner')
-        .css('position', this.options.layer ? 'absolute' : 'static');
+
+      $('body')
+      .addClass(this.options.layer ? 'bodyEfect' : '');
     },
 
     listen: function() {
@@ -265,6 +266,8 @@
     hide: function(callback) {
       var banner = $('#smartbanner');
       banner.stop();
+
+      $('body').removeClass(this.options.layer ? 'bodyEfect' : '');
 
       if (this.options.layer) {
         banner.animate({
