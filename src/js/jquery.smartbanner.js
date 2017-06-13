@@ -218,7 +218,7 @@
       }
 
       $('body')
-      .addClass(this.options.layer ? 'bodyEfect' : '');
+      .addClass(this.options.layer ? 'is-smartBanner-enable' : '');
     },
 
     listen: function() {
@@ -267,7 +267,7 @@
       var banner = $('#smartbanner');
       banner.stop();
 
-      $('body').removeClass(this.options.layer ? 'bodyEfect' : '');
+      $('body').removeClass(this.options.layer ? 'is-smartBanner-enable' : '');
 
       if (this.options.layer) {
         banner.animate({

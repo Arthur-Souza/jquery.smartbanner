@@ -1,30 +1,31 @@
 <html>
-  <head>
-    <title>YouTube</title>
-    <meta charset="utf-8">
-    <meta name="apple-itunes-app" content="app-id=987480808">
-    <meta name="google-play-app" content="app-id=br.com.pajucara">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="jquery.smartbanner.css" type="text/css" media="screen">
-  </head>
-  <body>
-    ...
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script src="jquery.smartbanner.js"></script>
-    <script type="text/javascript">
-      $(function() { $.smartbanner({
-        title: 'Pajuçara',
-        author: 'Tv Pajuçara LTDA',
-        price: 'OBTER',
-        appStoreLanguage: 'pt',
-        inAppStore: 'Na app Store',
-        inGooglePlay: 'No GooglePlay',
-        icon: 'apple-touch-icon.png',
-        layer: true,
-        button: 'VER'
+    <head>
+        <title>YouTube</title>
+        <meta charset="utf-8">
+        <meta name="apple-itunes-app" content="app-id=987480808">
+        <meta name="google-play-app" content="app-id=br.com.pajucara">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      }) } )
-    </script>
-  </body>
+        <link rel="stylesheet" href="src/style/jquery.smartbanner.css" type="text/css" media="screen">
+    </head>
+    <body>
+        Page Content...
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="src/js/jquery.smartbanner.js"></script>
+        <script type="text/javascript">
+            $(function() { 
+                $.smartbanner({
+                    title: 'Pajuçara',
+                    author: 'Tv Pajuçara LTDA',
+                    price: 'OBTER',
+                    appStoreLanguage: 'pt',
+                    inAppStore: 'Na app Store',
+                    inGooglePlay: 'No GooglePlay',
+                    icon: 'smart-banner-icon.png',
+                    layer: true,
+                    button: 'VER'
+                    });
+                });
+        </script>
+    </body>
 </html>
